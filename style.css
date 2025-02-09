@@ -1,15 +1,46 @@
 body {
+    background-color: #0d0d0d;
+    color: #fff;
     font-family: 'Cyberpunk', sans-serif;
-    background-color: black;
-    color: #0ff; /* Neon glow effect */
     text-align: center;
 }
-#flash-screen {
-    width: 100vw;
+
+#splash-screen {
+    width: 100%;
     height: 100vh;
-    position: absolute;
-    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
 }
+
+#splash-screen img {
+    width: 80%;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
 #game-container {
     display: none;
+    padding: 20px;
+}
+
+.wallet, .spin-wheel, .daily-bonus, .leaderboard {
+    margin: 20px;
+}
+
+button {
+    background: #ff00ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff0099;
 }
