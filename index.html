@@ -3,52 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpunk Game UI</title>
+    <title>MetaRush - Cyberpunk Game UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Splash Screen -->
-    <div id="splash-screen">
-        <img src="assets/images/10e0bad6-9e22-45fe-a399-de83e188fab1.webp" alt="Splash Image">
+    <!-- Flash Screen -->
+    <div id="flash-screen">
+        <img src="assets/images/b22b838e-4548-4a9b-b913-b3c8374ec179.webp" alt="Flash Screen">
     </div>
 
     <!-- Main Game UI -->
     <div id="game-container">
+
+        <!-- Header -->
         <header>
-            <h1>MetaVerse Token Game</h1>
+            <h1>MetaRush</h1>
+            <p>Cyberpunk Game Experience</p>
         </header>
 
-        <div id="game-content">
-            <img src="assets/images/86162342-99c6-498a-8682-2ded2a415139.webp" alt="Game Background">
-            
-            <div class="wallet">
-                <img src="assets/images/b22b838e-4548-4a9b-b913-b3c8374ec179.webp" alt="Wallet Icon">
-                <p>Balance: <span id="balance">1000</span> Coins</p>
-            </div>
+        <!-- Wallet Section -->
+        <section id="wallet">
+            <h2>Wallet</h2>
+            <p>Total Balance: <span id="balance">1000</span> MetaRush Coins</p>
+            <button onclick="convertCurrency()">Convert to Tokens</button>
+        </section>
 
-            <div class="spin-wheel">
-                <img src="assets/images/bec6082c-18c0-41d7-bd48-a04e2d3ea546.webp" alt="Spin Wheel">
-                <button id="spin-btn">Spin</button>
-            </div>
+        <!-- Daily Bonus Section -->
+        <section id="daily-bonus">
+            <h2>Daily Login Bonus</h2>
+            <p>Claim: <span id="bonus-amount">200</span> Coins</p>
+            <button onclick="claimBonus()">Claim Now</button>
+        </section>
 
-            <div class="daily-bonus">
-                <img src="assets/images/e1e4f0de-f0df-4512-baee-2788a16c4b1b.webp" alt="Daily Bonus">
-                <button id="claim-bonus">Claim Daily Bonus</button>
-            </div>
+        <!-- Spin Wheel Section -->
+        <section id="spin-wheel">
+            <h2>Spin & Win</h2>
+            <img src="assets/images/86162342-99c6-498a-8682-2ded2a415139.webp" alt="Spin Wheel" id="wheel">
+            <button onclick="spinWheel()">Spin</button>
+        </section>
 
-            <div class="leaderboard">
-                <img src="assets/images/ee1af72e-14c6-4933-808d-975a2bd55cb9.webp" alt="Leaderboard">
-            </div>
-        </div>
+        <!-- Leaderboard Section -->
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list">
+                <li>Player1 - 5000 Coins</li>
+                <li>Player2 - 4500 Coins</li>
+                <li>Player3 - 4000 Coins</li>
+            </ul>
+        </section>
 
-        <footer>
-            <nav>
-                <img src="assets/images/fb248aa3-a93d-4c75-81bf-f1f8aa2f39d7.webp" alt="Navigation Bar">
-            </nav>
-        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Navigation Bar -->
+    <nav id="bottom-nav">
+        <a href="#wallet">Wallet</a>
+        <a href="#daily-bonus">Bonus</a>
+        <a href="#spin-wheel">Spin</a>
+        <a href="#leaderboard">Leaderboard</a>
+    </nav>
+
+    <script src="style.js"></script>
 </body>
 </html>
