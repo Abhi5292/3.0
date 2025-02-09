@@ -1,44 +1,15 @@
 body {
-    font-family: 'Orbitron', sans-serif;
-    background-color: #010A26;
-    color: #0FF;
+    font-family: 'Cyberpunk', sans-serif;
+    background-color: black;
+    color: #0ff; /* Neon glow effect */
     text-align: center;
 }
-
-header {
-    background: linear-gradient(45deg, #FF00FF, #00FFFF);
-    padding: 10px;
+#flash-screen {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: black;
 }
-
-section {
-    border: 2px solid #0FF;
-    padding: 20px;
-    margin: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-}
-
-button {
-    background: #FF00FF;
-    border: none;
-    padding: 10px;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-button:hover {
-    background: #00FFFF;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #333;
-    padding: 10px;
-}
-
-nav button {
-    margin: 5px;
+#game-container {
+    display: none;
 }
