@@ -3,57 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MetaRush - Cyberpunk Game</title>
+    <title>Cyberpunk Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="flash-screen">
+        <img src="assets/images/flash-screen.png" alt="Flash Screen">
+    </div>
 
-    <header>
-        <h1>MetaRush - Cyberpunk Game</h1>
-    </header>
-
-    <main>
-        <!-- Daily Login Bonus -->
-        <section id="daily-bonus">
-            <h2>DAILY LOGIN BONUS</h2>
-            <p id="bonus-amount">200 Coins</p>
-        </section>
-
-        <!-- Wallet -->
-        <section id="wallet">
-            <h2>Wallet</h2>
-            <p>MetaRush Coins: <span id="coin-balance">0</span></p>
-            <p>MetaVerse Tokens: <span id="token-balance">0</span></p>
-            <button onclick="convertCurrency()">Convert</button>
-        </section>
-
-        <!-- Spin Wheel -->
-        <section id="spin-wheel">
-            <h2>Spin Wheel</h2>
-            <img src="assets/spin-wheel.png" id="wheel-image">
-            <button onclick="spinWheel()">SPIN</button>
-        </section>
-
-        <!-- Leaderboard -->
-        <section id="leaderboard">
-            <h2>Leaderboard</h2>
-            <ul id="leaderboard-list">
-                <li>Player1 - 5000 Points</li>
-                <li>Player2 - 4500 Points</li>
-                <li>Player3 - 4000 Points</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <nav>
-            <button onclick="navigate('home')">Home</button>
-            <button onclick="navigate('wallet')">Wallet</button>
-            <button onclick="navigate('spin')">Spin</button>
-            <button onclick="navigate('leaderboard')">Leaderboard</button>
-        </nav>
-    </footer>
-
+    <div id="game-container">
+        <img id="background" src="assets/images/background.png" alt="Cyberpunk Background">
+        <header>
+            <h1>MetaRush Game</h1>
+        </header>
+        <main>
+            <section id="wallet">
+                <img src="assets/images/wallet.png" alt="Wallet">
+                <p>Balance: <span id="balance">1000</span> Coins</p>
+            </section>
+            <section id="game">
+                <iframe src="components/spin-wheel.html"></iframe>
+            </section>
+            <section id="leaderboard">
+                <iframe src="components/leaderboard.html"></iframe>
+            </section>
+        </main>
+        <footer>
+            <iframe src="components/navbar.html"></iframe>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
