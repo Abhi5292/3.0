@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpunk Game</title>
+    <title>Cyberpunk Game UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="flash-screen">
-        <img src="assets/images/flash-screen.png" alt="Flash Screen">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img src="assets/images/10e0bad6-9e22-45fe-a399-de83e188fab1.webp" alt="Splash Image">
     </div>
 
+    <!-- Main Game UI -->
     <div id="game-container">
-        <img id="background" src="assets/images/background.png" alt="Cyberpunk Background">
         <header>
-            <h1>MetaRush Game</h1>
+            <h1>MetaVerse Token Game</h1>
         </header>
-        <main>
-            <section id="wallet">
-                <img src="assets/images/wallet.png" alt="Wallet">
+
+        <div id="game-content">
+            <img src="assets/images/86162342-99c6-498a-8682-2ded2a415139.webp" alt="Game Background">
+            
+            <div class="wallet">
+                <img src="assets/images/b22b838e-4548-4a9b-b913-b3c8374ec179.webp" alt="Wallet Icon">
                 <p>Balance: <span id="balance">1000</span> Coins</p>
-            </section>
-            <section id="game">
-                <iframe src="components/spin-wheel.html"></iframe>
-            </section>
-            <section id="leaderboard">
-                <iframe src="components/leaderboard.html"></iframe>
-            </section>
-        </main>
+            </div>
+
+            <div class="spin-wheel">
+                <img src="assets/images/bec6082c-18c0-41d7-bd48-a04e2d3ea546.webp" alt="Spin Wheel">
+                <button id="spin-btn">Spin</button>
+            </div>
+
+            <div class="daily-bonus">
+                <img src="assets/images/e1e4f0de-f0df-4512-baee-2788a16c4b1b.webp" alt="Daily Bonus">
+                <button id="claim-bonus">Claim Daily Bonus</button>
+            </div>
+
+            <div class="leaderboard">
+                <img src="assets/images/ee1af72e-14c6-4933-808d-975a2bd55cb9.webp" alt="Leaderboard">
+            </div>
+        </div>
+
         <footer>
-            <iframe src="components/navbar.html"></iframe>
+            <nav>
+                <img src="assets/images/fb248aa3-a93d-4c75-81bf-f1f8aa2f39d7.webp" alt="Navigation Bar">
+            </nav>
         </footer>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
