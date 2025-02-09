@@ -1,0 +1,11 @@
+<div id="spin-wheel">
+    <img src="../assets/images/spin-wheel.png" alt="Spin Wheel">
+    <button onclick="spin()">Spin the Wheel</button>
+</div>
+<script>
+    function spin() {
+        let rewards = [150, 200, 500, 1000, "1 MetaVerse Token"];
+        let result = rewards[Math.floor(Math.random() * rewards.length)];
+        alert("You won: " + result);
+    }
+</script>
